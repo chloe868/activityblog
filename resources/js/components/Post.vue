@@ -31,12 +31,12 @@
     <button type="button" class="btn btn-primary" @click="show">Add Post</button><br>
     <div class="card" style="margin-top:5%">
         <div class="card-header">
-            Featured
+            Warning
         </div>
         <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+           <div class="title">
+                    No Posts Yet
+                </div>
         </div>
     </div>
 </div>
@@ -66,7 +66,6 @@
     top: 0;
     left: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* text-align: center; */
     background: rgb(54, 54, 54, .7);
 }
 .blurred-background .card {
@@ -78,9 +77,11 @@
     margin-top: 180px;
     font-weight: lighter;
     border-radius: 3px;
-    /* font-size: 30px; */
     padding: 20px;
     transition: .2s;
+}
+.title {
+    font-size: 84px;
 }
 .btn:not(:disabled):not(.disabled) {
     cursor: pointer;
@@ -103,10 +104,10 @@
             }
         },
         methods: {
-            hide(){
+            hide() {
                 this.hideShow = false
             },
-            show(){
+            show() { 
                 this.hideShow = true
             }
         }

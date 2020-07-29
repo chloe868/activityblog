@@ -2032,6 +2032,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -6498,7 +6499,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.form-control {\n    display: block;\n    height: calc(1.6em + 0.75rem + 2px);\n    padding: 0.375rem 0.75rem;\n    font-size: 0.9rem;\n    font-weight: 400;\n    line-height: 1.6;\n    color: #495057;\n    background-color: #fff;\n    background-clip: padding-box;\n    border: 1px solid #ced4da;\n    border-radius: 0.25rem;\n    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n}\n.blurred-background {\n    position: fixed;\n    box-sizing: border-box;\n    width: 100%;\n    height: 100%;\n    z-index: 1;\n    top: 0;\n    left: 0;\n    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n    /* text-align: center; */\n    background: rgb(54, 54, 54, .7);\n}\n.blurred-background .card {\n    margin-left: 33%;\n}\n.alert-box {\n    background: white;\n    display: inline-block;\n    margin-top: 180px;\n    font-weight: lighter;\n    border-radius: 3px;\n    /* font-size: 30px; */\n    padding: 20px;\n    transition: .2s;\n}\n.btn:not(:disabled):not(.disabled) {\n    cursor: pointer;\n    float: right;\n    margin-left: 3%;\n}\n", ""]);
+exports.push([module.i, "\n.form-control {\n    display: block;\n    height: calc(1.6em + 0.75rem + 2px);\n    padding: 0.375rem 0.75rem;\n    font-size: 0.9rem;\n    font-weight: 400;\n    line-height: 1.6;\n    color: #495057;\n    background-color: #fff;\n    background-clip: padding-box;\n    border: 1px solid #ced4da;\n    border-radius: 0.25rem;\n    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n}\n.blurred-background {\n    position: fixed;\n    box-sizing: border-box;\n    width: 100%;\n    height: 100%;\n    z-index: 1;\n    top: 0;\n    left: 0;\n    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n    background: rgb(54, 54, 54, .7);\n}\n.blurred-background .card {\n    margin-left: 33%;\n}\n.alert-box {\n    background: white;\n    display: inline-block;\n    margin-top: 180px;\n    font-weight: lighter;\n    border-radius: 3px;\n    padding: 20px;\n    transition: .2s;\n}\n.title {\n    font-size: 84px;\n}\n.btn:not(:disabled):not(.disabled) {\n    cursor: pointer;\n    float: right;\n    margin-left: 3%;\n}\n", ""]);
 
 // exports
 
@@ -38475,22 +38476,12 @@ var staticRenderFns = [
       { staticClass: "card", staticStyle: { "margin-top": "5%" } },
       [
         _c("div", { staticClass: "card-header" }, [
-          _vm._v("\n            Featured\n        ")
+          _vm._v("\n            Warning\n        ")
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "card-body" }, [
-          _c("h5", { staticClass: "card-title" }, [
-            _vm._v("Special title treatment")
-          ]),
-          _vm._v(" "),
-          _c("p", { staticClass: "card-text" }, [
-            _vm._v(
-              "With supporting text below as a natural lead-in to additional content."
-            )
-          ]),
-          _vm._v(" "),
-          _c("a", { staticClass: "btn btn-primary", attrs: { href: "#" } }, [
-            _vm._v("Go somewhere")
+          _c("div", { staticClass: "title" }, [
+            _vm._v("\n                    No Posts Yet\n                ")
           ])
         ])
       ]
