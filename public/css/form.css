@@ -1,0 +1,101 @@
+.masthead {
+    height: 100vh;
+    min-height: 500px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ-xByd-1jnN6y9HZyfuEd3Y5F3lNUbdlIUHu3zXsEx-X4g8m-w');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .btn-primary.custom-btn {
+     background-color: orange;
+    border-color:orange;
+    color: white;
+  }
+  
+   head,body{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ-xByd-1jnN6y9HZyfuEd3Y5F3lNUbdlIUHu3zXsEx-X4g8m-w');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+    margin-top:0%;
+    }
+   
+    .container{
+    height: 100%;
+    align-content: center;
+    }
+   
+    .card{
+    height: 370px;
+    margin-top: 13%;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(220,220,220,.3) !important;
+    }
+  
+    .card-body {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        min-height: 1px;
+        padding: 2.25rem;
+    }
+  
+    .card-header h3{
+    color: black;
+    }
+  
+    .remember{
+    color: black;
+    }
+   
+    .remember input
+    {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+    }
+   
+    .links{
+    color: black;
+    }
+  
+    a {
+        color: whitesmoke;
+        text-decoration: none;
+        background-color: transparent;
+    }
+  
+    .form-check-label {
+        margin-bottom: 9px;
+    }
+  
+    .register_btn {
+      color: black;
+      background-color: orange;
+      width: 100px;
+      border-radius: 20px;
+      margin-top: 3%;
+  }
+  
+  .register_btn:hover{
+      color: black;
+      background-color: orange;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+  
+  .login_btn {
+  color: black;
+  background-color: orange;
+  width: 100px;
+  border-radius: 20px;
+  margin-top: -4%;
+  }   
+  
+  .login_btn:hover{
+  color: black;
+  background-color: orange;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
