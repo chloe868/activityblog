@@ -18,7 +18,8 @@ class PostResource extends JsonResource
             'id'=>$request->id,
             'user_id'=>$request->user_id,
             'title'=>$request->title,
-            'postcontent'=>$request->postcontent
+            'postcontent'=>$request->postcontent,
+            'image'=>$request->image
         ];
     }
 

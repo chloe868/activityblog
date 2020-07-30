@@ -28,21 +28,71 @@
             </div>
         </div>
     </div>
-    <button type="button" class="btn btn-primary" @click="show">Add Post</button><br>
-    <div class="card" style="margin-top:5%">
-        <div class="card-header">
-            Warning
-        </div>
+    <button type="button" class="btn btn-primary" @click="show">Add Post</button><br><br>
+    <div v-if="posts.length <= 0" class="card" style="margin-top:5%">
+        <div class="card-header"></div>
         <div class="card-body">
            <div class="title">
-                    No Posts Yet
-                </div>
+                <center>
+                    No Post Yet<br>
+                    <i class="fa fa-smile-o" aria-hidden="true"></i>
+                </center>
+            </div>
+        </div>
+    </div>
+    <div v-if="posts.length > 0" class="row" style="margin-top:5%">
+        <div class="column" v-for="(datum, index) in posts" :key="index">
+            <div class="cards">
+            <div class="card-header">User</div>
+            <h2>{{datum.title}}</h2>
+            <p>{{datum.content}}</p>
+            </div>
         </div>
     </div>
 </div>
 </template>
 
 <style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  /* margin-left: 9px; */
+  margin-top: 9px;
+  float: left;
+  width: 25%;
+  padding: 20px;
+  border: solid 1px 5px;
+  border-spacing: 5px;
+}
+
+.cards{
+    border: solid 1px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 .form-control {
     display: block;
     height: calc(1.6em + 0.75rem + 2px);
@@ -94,7 +144,16 @@
     export default {
        data() {
         return {
-            posts: [],
+            posts: [
+                {title: 'batig nawong', content: 'The quick brown fox jumps over the lazy dog'},
+                {title: 'baki', content: 'The quick brown fox jumps over the lazy dog'},
+                {title: 'kokak', content: 'The quick brown fox jumps over the lazy dog'},
+                {title: 'jump', content: 'The quick brown fox jumps over the lazy dog'},
+                {title: 'joy', content: 'The quick brown fox jumps over the lazy dog'},
+                {title: 'happy', content: 'The quick brown fox jumps over the lazy dog'},
+                {title: 'jolly', content: 'The quick brown fox jumps over the lazy dog'},
+                {title: 'enjoy', content: 'The quick brown fox jumps over the lazy dog'}
+            ],
             post: {
                 id: '',
                 title: '',

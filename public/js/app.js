@@ -2033,10 +2033,84 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      posts: [],
+      posts: [{
+        title: 'batig nawong',
+        content: 'The quick brown fox jumps over the lazy dog'
+      }, {
+        title: 'baki',
+        content: 'The quick brown fox jumps over the lazy dog'
+      }, {
+        title: 'kokak',
+        content: 'The quick brown fox jumps over the lazy dog'
+      }, {
+        title: 'jump',
+        content: 'The quick brown fox jumps over the lazy dog'
+      }, {
+        title: 'joy',
+        content: 'The quick brown fox jumps over the lazy dog'
+      }, {
+        title: 'happy',
+        content: 'The quick brown fox jumps over the lazy dog'
+      }, {
+        title: 'jolly',
+        content: 'The quick brown fox jumps over the lazy dog'
+      }, {
+        title: 'enjoy',
+        content: 'The quick brown fox jumps over the lazy dog'
+      }],
       post: {
         id: '',
         title: '',
@@ -6499,7 +6573,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.form-control {\n    display: block;\n    height: calc(1.6em + 0.75rem + 2px);\n    padding: 0.375rem 0.75rem;\n    font-size: 0.9rem;\n    font-weight: 400;\n    line-height: 1.6;\n    color: #495057;\n    background-color: #fff;\n    background-clip: padding-box;\n    border: 1px solid #ced4da;\n    border-radius: 0.25rem;\n    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n}\n.blurred-background {\n    position: fixed;\n    box-sizing: border-box;\n    width: 100%;\n    height: 100%;\n    z-index: 1;\n    top: 0;\n    left: 0;\n    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n    background: rgb(54, 54, 54, .7);\n}\n.blurred-background .card {\n    margin-left: 33%;\n}\n.alert-box {\n    background: white;\n    display: inline-block;\n    margin-top: 180px;\n    font-weight: lighter;\n    border-radius: 3px;\n    padding: 20px;\n    transition: .2s;\n}\n.title {\n    font-size: 84px;\n}\n.btn:not(:disabled):not(.disabled) {\n    cursor: pointer;\n    float: right;\n    margin-left: 3%;\n}\n", ""]);
+exports.push([module.i, "\n* {\n  box-sizing: border-box;\n}\n\n/* Create four equal columns that floats next to each other */\n.column {\n  /* margin-left: 9px; */\n  margin-top: 9px;\n  float: left;\n  width: 25%;\n  padding: 20px;\n  border: solid 1px 5px;\n  border-spacing: 5px;\n}\n.cards{\n    border: solid 1px;\n    padding: 20px;\n}\n\n/* Clear floats after the columns */\n.row:after {\n  content: \"\";\n  display: table;\n  clear: both;\n}\n\n/* On screens that are 992px wide or less, go from four columns to two columns */\n@media screen and (max-width: 992px) {\n.column {\n    width: 50%;\n}\n}\n\n/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */\n@media screen and (max-width: 600px) {\n.column {\n    width: 100%;\n}\n}\n.form-control {\n    display: block;\n    height: calc(1.6em + 0.75rem + 2px);\n    padding: 0.375rem 0.75rem;\n    font-size: 0.9rem;\n    font-weight: 400;\n    line-height: 1.6;\n    color: #495057;\n    background-color: #fff;\n    background-clip: padding-box;\n    border: 1px solid #ced4da;\n    border-radius: 0.25rem;\n    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n}\n.blurred-background {\n    position: fixed;\n    box-sizing: border-box;\n    width: 100%;\n    height: 100%;\n    z-index: 1;\n    top: 0;\n    left: 0;\n    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\n    background: rgb(54, 54, 54, .7);\n}\n.blurred-background .card {\n    margin-left: 33%;\n}\n.alert-box {\n    background: white;\n    display: inline-block;\n    margin-top: 180px;\n    font-weight: lighter;\n    border-radius: 3px;\n    padding: 20px;\n    transition: .2s;\n}\n.title {\n    font-size: 84px;\n}\n.btn:not(:disabled):not(.disabled) {\n    cursor: pointer;\n    float: right;\n    margin-left: 3%;\n}\n", ""]);
 
 // exports
 
@@ -38441,8 +38515,55 @@ var render = function() {
       [_vm._v("Add Post")]
     ),
     _c("br"),
+    _c("br"),
     _vm._v(" "),
-    _vm._m(1)
+    _vm.posts.length <= 0
+      ? _c(
+          "div",
+          { staticClass: "card", staticStyle: { "margin-top": "5%" } },
+          [
+            _c("div", { staticClass: "card-header" }),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-body" }, [
+              _c(
+                "div",
+                { staticClass: "title" },
+                [
+                  _c("center", [
+                    _vm._v("\n                    No Post Yet"),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("i", {
+                      staticClass: "fa fa-smile-o",
+                      attrs: { "aria-hidden": "true" }
+                    })
+                  ])
+                ],
+                1
+              )
+            ])
+          ]
+        )
+      : _vm._e(),
+    _vm._v(" "),
+    _vm.posts.length > 0
+      ? _c(
+          "div",
+          { staticClass: "row", staticStyle: { "margin-top": "5%" } },
+          _vm._l(_vm.posts, function(datum, index) {
+            return _c("div", { key: index, staticClass: "column" }, [
+              _c("div", { staticClass: "cards" }, [
+                _c("div", { staticClass: "card-header" }, [_vm._v("User")]),
+                _vm._v(" "),
+                _c("h2", [_vm._v(_vm._s(datum.title))]),
+                _vm._v(" "),
+                _c("p", [_vm._v(_vm._s(datum.content))])
+              ])
+            ])
+          }),
+          0
+        )
+      : _vm._e()
   ])
 }
 var staticRenderFns = [
@@ -38466,26 +38587,6 @@ var staticRenderFns = [
         )
       ])
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "card", staticStyle: { "margin-top": "5%" } },
-      [
-        _c("div", { staticClass: "card-header" }, [
-          _vm._v("\n            Warning\n        ")
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
-          _c("div", { staticClass: "title" }, [
-            _vm._v("\n                    No Posts Yet\n                ")
-          ])
-        ])
-      ]
-    )
   }
 ]
 render._withStripped = true
